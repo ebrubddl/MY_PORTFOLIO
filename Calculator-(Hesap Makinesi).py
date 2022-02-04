@@ -32,7 +32,7 @@ operations={
 }
 ##################################
 def calculator():
-  sayi1=int(input("What is the first number? : "))
+  sayi1=float(input("What is the first number? : "))
   symbol=[]
   for i in operations:
   #print(i)
@@ -40,7 +40,7 @@ def calculator():
   will_finish=False
   while not will_finish:
     operation_symbol=input(f"Pick an operation -> {symbol} :")
-    sayi2=int(input("What is the second number? : "))
+    sayi2=float(input("What is the second number? : "))
     chosen_operation = operations[operation_symbol]
     answer=chosen_operation(sayi1,sayi2)
 
