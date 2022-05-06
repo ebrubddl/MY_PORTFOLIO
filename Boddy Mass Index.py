@@ -3,4 +3,6 @@ weight = float(input("enter your weight in kg: "))
 
 BodyMassIndex=weight/height**2
 
-print(BodyMassIndex)
+BMI=round(BodyMassIndex)
+
+print(f"Your BMI is {BMI}.")
